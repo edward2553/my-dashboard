@@ -1,6 +1,4 @@
 import { PokemonCard, simplePokemon } from '@/app/pokemons';
-import Image from 'next/image';
-import React from 'react';
 
 interface Props {
   pokemons: simplePokemon[];
