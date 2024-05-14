@@ -4,9 +4,12 @@ import {
   IoBrowsersOutline,
   IoCalculatorOutline,
   IoFootball,
+  IoHeart,
+  IoHeartOutline,
   IoLogoReact,
 } from 'react-icons/io5';
 import { SidebarMenuItem } from './SidebarMenuItem';
+import { ImHeart } from 'react-icons/im';
 
 const menuItems = [
   {
@@ -26,6 +29,12 @@ const menuItems = [
     icon: <IoFootball size={40} />,
     title: 'Pokemons',
     subTitle: 'Generación estática',
+  },
+  {
+    path: '/dashboard/favorites',
+    icon: <IoHeartOutline size={40} />,
+    title: 'Favoritos',
+    subTitle: 'Global State',
   },
 ];
 

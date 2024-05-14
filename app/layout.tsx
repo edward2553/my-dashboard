@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Gothic_A1 } from "next/font/google";
 import "./globals.css";
+import Providers from "./store/Providers";
 
 const inter = Gothic_A1({ subsets: ["latin"], weight: '600'});
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
