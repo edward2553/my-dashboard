@@ -1,3 +1,8 @@
+# Description
+
+this is a next prectice for the fernando herrera's course from nextjs
+we practice a lot of serverside and client side components, and also we implement redux and a state managment on next js. also we implement localstorage
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
