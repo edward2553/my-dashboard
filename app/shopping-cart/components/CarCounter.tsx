@@ -17,7 +17,7 @@ interface CounterResponse {
 }
 
 const getApiCounter = async (): Promise<CounterResponse> => {
-  const data = await fetch('http://localhost:3006/api/counter').then((res) =>
+  const data = await fetch('http://localhost:3000/api/counter').then((res) =>
     res.json()
   );
 
@@ -36,7 +36,7 @@ export const CarCounter = ({ value = 0 }: Props) => {
 
   useEffect(() => {
     getApiCounter().then((data) => dispatch(initCounterState(data.count)));
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

@@ -1,0 +1,1 @@
+export const POKEMON_LOCAL_STORAGE_KEY = 'favorite-pokemons';
